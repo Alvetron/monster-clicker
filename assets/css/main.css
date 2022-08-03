@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.dn {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #00E0C6;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #f2f2f2;
+  text-shadow: 0 0 5px #035f5f;
+}
+
+.game-screen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  background-color: #fafafa;
+  box-shadow: 0 0 0 6px #009393;
+}
+
+.island {
+  pointer-events: none;
+  user-select: none;
+}
+
+.monster {
+  position: absolute;
+  bottom: 44%;
+  left: 50%;
+  animation: monsterAnim 1.3s infinite ease-in-out;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 20px 10px #000000);
+  user-select: none;
+}
+
+.monster:hover {
+  cursor: url('../cursors/knife.png'), auto;
+}
+
+.monster:active {
+  cursor: url('../cursors/knife-active.png'), auto;
+  transform: translateX(-50%) scale(0.9);
+}
+
+.hp-bar {
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  height: 15px;
+  font-size: 0.9rem;
+  line-height: 0.8;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(177, 5, 5, 0.756);
+  overflow: hidden;
+}
+
+.monster-img {
+  width: 110px;
+  pointer-events: none;
+}
+
+.points {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+@keyframes monsterAnim {
+  0% {
+    bottom: 43%;
+  }
+  50% {
+    bottom: 47%;
+  }
+  100% {
+    bottom: 43%;
+  }
+}

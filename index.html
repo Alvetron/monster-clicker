@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/loading.css">
+  
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- TITLE -->
+  <title>Monster Clicker</title>
+
+  <!-- SCRIPTS  -->
+  <script src="assets/js/loader.js" defer></script>
+  <script src="assets/js/Class/Monster.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="loader">
+    <div class="loader__top">
+      <p class="loader__text">Loading <span class="loader__preccent">80%</span></p>
+    </div>
+    <div class="loader__bottom">
+      <div class="loader__bar"></div>
+      <img class="loader__monster" src="assets/images/monsters/bobby.png" alt="">
+    </div>
+  </div>  
+  <main class="main">
+    <h1 class="title">Monster Clicker</h1>
+    <div class="game-screen">
+      <div class="environment">
+        <img class="island" src="assets/images/islands/normal.png" alt="">
+        <div class="monster">
+        </div>
+      </div>
+    </div>
+    <div class="points">0</div>
+  </main>
+</body>
+</html>
