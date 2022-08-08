@@ -1,3 +1,5 @@
+const imgMonsterFolder = 'assets/images/monsters/';
+
 const monstersArr = 
 [
   {
@@ -23,8 +25,6 @@ const monstersArr =
 const body = document.querySelector('body');
 const gameScreen = document.querySelector('.game-screen');
 const pointsEl = document.querySelector('.points');
-
-const imgMonsterFolder = 'assets/images/monsters/';
 
 function createRandomMonster() {
   const rand = Math.round(Math.random() * 2);
